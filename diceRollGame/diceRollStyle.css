@@ -1,0 +1,8 @@
+/* More accessibility for clicking area around dice image */
+.gameIcon:hover {
+    cursor: pointer;
+}
+
+.gameIcon img {
+    max-width: 35%;
+}

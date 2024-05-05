@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="albumQuizStyle.css">
+    <title>Oregairu Album Quiz</title>
+</head>
+
+<body>
+    <nav>
+        <div class="navHomeBox">
+            <a href="../index.html" class="navHome fontBold">⬅️ Home</a>
+        </div>
+        <div class="navHomeBox fontBold">
+            <div class="navbar-text">Time: 0</div>
+        </div>
+    </nav>
+    <header>
+        <div class="headerTextContainer textStroke">
+            <h1 class="mainRemark fontThicker">Presenting to you...</h1>
+            <h1 class="mainTitle fontThickest">Oregairu Album Quiz</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="titleScreen" class="fontBold">
+            <p>
+                Think you know Oregairu well? Answer
+                all the questions quickly.
+                Any mistakes will deduct time from your total!
+                Your final score will be the time remaining.
+            </p>
+            <button class="btn btn-primary fontThick" id="quizStart">Start Quiz!</button>
+        </div>
+
+        <div id="questionBlock">
+            <h2 id="questionPrompt">Placeholder question</h2>
+            <div class="btnContainer">
+                <button class="btn btn-primary btn-sm btnOption fontThick" id="quizOption1"></button>
+                <button class="btn btn-primary btn-sm btnOption fontThick" id="quizOption2"></button>
+                <button class="btn btn-primary btn-sm btnOption fontThick" id="quizOption3"></button>
+                <button class="btn btn-primary btn-sm btnOption fontThick" id="quizOption4"></button>
+            </div>
+        </div>
+
+        <div id="answerResult"></div>
+
+        <div id="endGameBlock">
+            <h2>Great job!</h2>
+            <p>Your final score is:</p>
+            <h3 id="showScore">0</h3>
+            <form id="submitInitials">
+                <div class="form-group">
+                    <label for="playerInitials">Enter Your Initials</label>
+                    <input type="text" class="form-control" id="playerInitials" value="">
+                </div>
+                <button type="submit" class="btn btn-primary" id="submitButton">Submit</button>
+            </form>
+            <div class="alert alert-danger" id="alertBox" style="display: none;">
+                Please enter your initials!
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2024 Oregairu Collaboration Games</p>
+        <p>Oregairu Album Quiz derived from DreissenZulu with MIT License: https://github.com/DreissenZulu/JS-Quiz-Game</p>
+        <p>Assets: <br>
+            Left arrow emoji, Fair use: https://emojipedia.org/left-arrow <br>
+        </p>
+    </footer>
+
+    <script src="albumQuestions.js"></script>
+    <script src="albumQuizScript.js"></script>
+</body>
+
+</html>

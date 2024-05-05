@@ -1,0 +1,89 @@
+/* Override some display modes from original style.css */
+nav {
+    display: flex;
+}
+
+.restartButton {
+    margin-inline: 0.5rem;
+    font-size: medium;
+}
+
+.gameContainers {
+    display: block;
+}
+
+/* Absolute doesn't affect page layout */
+.overlapMessage {
+    position: absolute;
+    right: 5rem;
+    color: rgb(10, 63, 10);
+    letter-spacing: .05rem;
+
+}
+
+.cardRow {
+    display: block;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #333;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    aspect-ratio: 1 / 1.25;
+    height: 175px;
+    color: #444;
+    margin: 2rem;
+    /* background-image: url(); */
+    /* Make sure image of album fits onto card properly */
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    background-color: rgba(255, 50, 84, 0.815);
+    /* background-image: url(); */
+    /* background-image: url(../img/s1Album.webp); */
+    background-size: cover;
+    background-position: center;
+}
+
+.winContainer {
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-block: 3.5rem;
+}
+
+.winMenu {
+    background-color: lightcoral;
+    border: 2px solid black;
+    padding: 2rem 4rem;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.winMenu:hover {
+    cursor: pointer;
+    background-color: lightpink;
+}
+
+.winMessage {
+    color: white;
+    text-shadow: 
+        -2px -2px 0 rgb(255, 0, 132),  
+        2px -2px 0 rgb(255, 0, 132),
+        -2px  2px 0 rgb(255, 0, 132),
+        2px  2px 0 rgb(255, 0, 132);
+}
+
+.winAside {
+    margin-top: 1rem;
+    text-decoration: underline;
+}

@@ -1,0 +1,132 @@
+/* Universal */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    background-color: lightskyblue;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+body > * {
+    margin: 0.5rem;
+}
+
+/* Styles */
+
+.textUnderline {
+    text-decoration: underline;
+}
+
+.fontBold {
+    font-weight: bold;
+}
+
+.fontThick {
+    font-size: 1.5rem;
+}
+
+.fontThicker {
+    font-size: 2.2rem;
+}
+
+.fontThickest {
+    font-size: 2.8rem;
+}
+
+.textStroke {
+    color: white;
+    text-shadow: 
+        -2px -2px 0 black,  
+        2px -2px 0 black,
+        -2px  2px 0 black,
+        2px  2px 0 black; 
+}
+
+/* Page top to bottom */
+.navHomeBox {
+    background-color: lightblue;
+    padding: .5rem;
+    border-radius: 25px;
+    border: .15rem solid black;
+    max-width: fit-content;
+}
+.navHomeBox:hover {
+    /* background-color: rgba(255, 50, 84, 0.815); */
+    border-color: rgba(255, 50, 84, 0.815);
+    color: rgba(255, 50, 84, 0.815);
+}
+
+nav a, nav a:hover {
+    text-decoration: none;
+    color: inherit
+}
+
+nav a:visited {
+    color: inherit
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTextContainer {
+    max-width: fit-content;
+    background-color: lightblue;
+    padding: .5rem;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainRemark {
+    margin-bottom: 0rem;
+}
+
+/* Main */
+.gameContainers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.gameContainers img {
+    display: block;
+    margin: auto;
+    margin-bottom: .3rem;
+}
+
+.gameIcon {
+    margin-block: 1rem;
+    padding: .5rem;
+    border-radius: 25px;
+    border: .15rem solid lightskyblue;
+}
+.gameIcon:hover {
+    border: .15rem solid black;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(66, 125, 215);
+    color: whitesmoke;
+    margin: 0rem;
+    padding: .5rem 1rem;
+}
+
+footer p {
+    margin: 1rem 0rem;
+}
